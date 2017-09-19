@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flush.It</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        <style>
+            /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+            
+            /* Optional: Makes the sample page fill the window. */
+            #map {
+                height: 700px;
+            }
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .infoWindowContent {
+                font-size:  14px !important;
+                border-top: 1px solid #ccc;
+                padding-top: 10px;
+            }
+            
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="assets/js/angular1.3.14.js"></script>
+        <script src="assets/js/angular-google-maps.js"></script>
+        <script src="assets/js/MapCtrl.js"></script>
+        <script src="assets/js/jquery-3.1.1.slim.min.js"></script>    
+        <script src="assets/js/tether.min.js"></script>
+        <script src="assets/js/bootstrap.min.js" ></script>
+    </head>
+    <body >
+        
+       
+        <div class="collapse bg-inverse" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Work in progress...</p>
+                    </div>
+                    <div class="col-sm-4 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                          <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                          <li><a href="#" class="text-white">Like on Facebook</a></li>
+                          <li><a href="#" class="text-white">Email me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-inverse bg-inverse">
+            <div class="container d-flex justify-content-between">
+                <a style="font-family:'Comic Sans MS';" href="#" class="navbar-brand">Flush.it</a>
+                <img src="assets/img/toileticon3.png" alt="Picture" style="width:50px; height:50px;">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxnKwgptsxyS9o40afsngjGNwuXRocRT8"></script>
+        <div ng-app="mapsApp" ng-controller="MapCtrl">
+            <div id="map" style=""></div>
+        </div>
+        
+        <!--<script> 
+            function initMap(){
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: 51.898103, lng: -8.475411},
+                    zoom: 8
+                });
+            }
+        </script>-->
+        
+        
+        
+    </body>
+</html>
