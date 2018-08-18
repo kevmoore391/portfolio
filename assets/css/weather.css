@@ -1,0 +1,18 @@
+form {
+	padding-top:10px;
+	padding-bottom:0px;
+	margin-bottom:0px;
+	background: #D9D4DC;
+	
+}
+
+.error{
+	color:red;
+}
+
+.chart{
+	top:0;
+	border-style: solid;
+	border-width: 1px;
+	
+}
